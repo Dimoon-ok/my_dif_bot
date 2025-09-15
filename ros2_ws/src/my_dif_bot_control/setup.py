@@ -20,6 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'robot_driver_node=my_dif_bot_control.robot_controller_node:main',
         ],
     },
 )

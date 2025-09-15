@@ -1,0 +1,252 @@
+[0.000000] (-) TimerEvent: {}
+[0.001801] (my_dif_bot_bringup) JobQueued: {'identifier': 'my_dif_bot_bringup', 'dependencies': OrderedDict()}
+[0.003031] (my_dif_bot_control) JobQueued: {'identifier': 'my_dif_bot_control', 'dependencies': OrderedDict()}
+[0.003245] (my_dif_bot_description) JobQueued: {'identifier': 'my_dif_bot_description', 'dependencies': OrderedDict()}
+[0.003327] (my_dif_bot_bringup) JobStarted: {'identifier': 'my_dif_bot_bringup'}
+[0.087117] (my_dif_bot_control) JobStarted: {'identifier': 'my_dif_bot_control'}
+[0.099172] (-) TimerEvent: {}
+[0.122246] (my_dif_bot_description) JobStarted: {'identifier': 'my_dif_bot_description'}
+[0.199351] (-) TimerEvent: {}
+[0.300044] (-) TimerEvent: {}
+[0.400677] (-) TimerEvent: {}
+[0.501331] (-) TimerEvent: {}
+[0.602109] (-) TimerEvent: {}
+[0.702927] (-) TimerEvent: {}
+[0.804154] (-) TimerEvent: {}
+[0.905154] (-) TimerEvent: {}
+[1.006104] (-) TimerEvent: {}
+[1.106743] (-) TimerEvent: {}
+[1.207495] (-) TimerEvent: {}
+[1.308217] (-) TimerEvent: {}
+[1.408895] (-) TimerEvent: {}
+[1.509548] (-) TimerEvent: {}
+[1.610326] (-) TimerEvent: {}
+[1.711249] (-) TimerEvent: {}
+[1.812024] (-) TimerEvent: {}
+[1.912680] (-) TimerEvent: {}
+[2.013314] (-) TimerEvent: {}
+[2.113996] (-) TimerEvent: {}
+[2.214628] (-) TimerEvent: {}
+[2.315275] (-) TimerEvent: {}
+[2.415940] (-) TimerEvent: {}
+[2.516745] (-) TimerEvent: {}
+[2.617737] (-) TimerEvent: {}
+[2.718526] (-) TimerEvent: {}
+[2.819195] (-) TimerEvent: {}
+[2.919871] (-) TimerEvent: {}
+[3.020617] (-) TimerEvent: {}
+[3.121354] (-) TimerEvent: {}
+[3.222142] (-) TimerEvent: {}
+[3.322871] (-) TimerEvent: {}
+[3.423649] (-) TimerEvent: {}
+[3.524291] (-) TimerEvent: {}
+[3.624983] (-) TimerEvent: {}
+[3.725653] (-) TimerEvent: {}
+[3.826264] (-) TimerEvent: {}
+[3.926940] (-) TimerEvent: {}
+[4.027601] (-) TimerEvent: {}
+[4.128363] (-) TimerEvent: {}
+[4.232337] (-) TimerEvent: {}
+[4.333040] (-) TimerEvent: {}
+[4.433831] (-) TimerEvent: {}
+[4.534708] (-) TimerEvent: {}
+[4.635785] (-) TimerEvent: {}
+[4.736535] (-) TimerEvent: {}
+[4.837387] (-) TimerEvent: {}
+[4.938171] (-) TimerEvent: {}
+[5.039504] (-) TimerEvent: {}
+[5.140866] (-) TimerEvent: {}
+[5.243363] (-) TimerEvent: {}
+[5.344659] (-) TimerEvent: {}
+[5.445393] (-) TimerEvent: {}
+[5.546195] (-) TimerEvent: {}
+[5.646973] (-) TimerEvent: {}
+[5.749102] (-) TimerEvent: {}
+[5.849938] (-) TimerEvent: {}
+[5.950884] (-) TimerEvent: {}
+[6.051973] (-) TimerEvent: {}
+[6.152882] (-) TimerEvent: {}
+[6.253910] (-) TimerEvent: {}
+[6.355489] (-) TimerEvent: {}
+[6.456281] (-) TimerEvent: {}
+[6.557057] (-) TimerEvent: {}
+[6.657911] (-) TimerEvent: {}
+[6.758721] (-) TimerEvent: {}
+[6.859639] (-) TimerEvent: {}
+[6.960495] (-) TimerEvent: {}
+[7.061406] (-) TimerEvent: {}
+[7.162333] (-) TimerEvent: {}
+[7.263287] (-) TimerEvent: {}
+[7.364155] (-) TimerEvent: {}
+[7.464980] (-) TimerEvent: {}
+[7.565725] (-) TimerEvent: {}
+[7.666415] (-) TimerEvent: {}
+[7.767146] (-) TimerEvent: {}
+[7.867887] (-) TimerEvent: {}
+[7.969082] (-) TimerEvent: {}
+[8.069803] (-) TimerEvent: {}
+[8.170656] (-) TimerEvent: {}
+[8.271415] (-) TimerEvent: {}
+[8.372168] (-) TimerEvent: {}
+[8.472929] (-) TimerEvent: {}
+[8.573686] (-) TimerEvent: {}
+[8.674392] (-) TimerEvent: {}
+[8.775139] (-) TimerEvent: {}
+[8.875898] (-) TimerEvent: {}
+[8.976649] (-) TimerEvent: {}
+[9.077356] (-) TimerEvent: {}
+[9.178174] (-) TimerEvent: {}
+[9.279020] (-) TimerEvent: {}
+[9.380072] (-) TimerEvent: {}
+[9.480880] (-) TimerEvent: {}
+[9.581635] (-) TimerEvent: {}
+[9.682749] (-) TimerEvent: {}
+[9.784749] (-) TimerEvent: {}
+[9.886647] (-) TimerEvent: {}
+[9.966179] (my_dif_bot_control) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_dif_bot_control', 'build', '--build-base', '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_control/build', 'install', '--record', '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_control/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/di/my_dif_bot/ros2_ws/src/my_dif_bot_control', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'LANGUAGE': 'ru_RU:en', 'USER': 'di', 'SSH_CLIENT': '192.168.0.103 56294 22', 'LC_TIME': 'ru_RU.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/di', 'OLDPWD': '/home/di', 'SSH_TTY': '/dev/pts/2', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ru_RU.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'di', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '9', 'PATH': '/home/di/bin:/home/di/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PAPERSIZE': 'a4', 'LC_ADDRESS': 'ru_RU.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'ru_RU.UTF-8', 'LC_TELEPHONE': 'ru_RU.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ru_RU.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ru_RU.UTF-8', 'LC_IDENTIFICATION': 'ru_RU.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_control', 'SSH_CONNECTION': '192.168.0.103 56294 192.168.0.101 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/di/my_dif_bot/ros2_ws/install/my_dif_bot_control/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ru_RU.UTF-8', 'LC_PAPER': 'ru_RU.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[9.986702] (-) TimerEvent: {}
+[9.999365] (my_dif_bot_bringup) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_dif_bot_bringup', 'build', '--build-base', '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_bringup/build', 'install', '--record', '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_bringup/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/di/my_dif_bot/ros2_ws/src/my_dif_bot_bringup', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'LANGUAGE': 'ru_RU:en', 'USER': 'di', 'SSH_CLIENT': '192.168.0.103 56294 22', 'LC_TIME': 'ru_RU.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/di', 'OLDPWD': '/home/di', 'SSH_TTY': '/dev/pts/2', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ru_RU.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'di', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '9', 'PATH': '/home/di/bin:/home/di/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PAPERSIZE': 'a4', 'LC_ADDRESS': 'ru_RU.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'ru_RU.UTF-8', 'LC_TELEPHONE': 'ru_RU.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ru_RU.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ru_RU.UTF-8', 'LC_IDENTIFICATION': 'ru_RU.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_bringup', 'SSH_CONNECTION': '192.168.0.103 56294 192.168.0.101 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_bringup/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/di/my_dif_bot/ros2_ws/install/my_dif_bot_bringup/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ru_RU.UTF-8', 'LC_PAPER': 'ru_RU.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[10.009461] (my_dif_bot_description) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/my_dif_bot_description', 'build', '--build-base', '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/build', 'install', '--record', '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/di/my_dif_bot/ros2_ws/src/my_dif_bot_description', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'LANGUAGE': 'ru_RU:en', 'USER': 'di', 'SSH_CLIENT': '192.168.0.103 56294 22', 'LC_TIME': 'ru_RU.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/di', 'OLDPWD': '/home/di', 'SSH_TTY': '/dev/pts/2', 'ROS_PYTHON_VERSION': '3', 'LC_MONETARY': 'ru_RU.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'di', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm', 'XDG_SESSION_ID': '9', 'PATH': '/home/di/bin:/home/di/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'PAPERSIZE': 'a4', 'LC_ADDRESS': 'ru_RU.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1002', 'LANG': 'ru_RU.UTF-8', 'LC_TELEPHONE': 'ru_RU.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ru_RU.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ru_RU.UTF-8', 'LC_IDENTIFICATION': 'ru_RU.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'PWD': '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description', 'SSH_CONNECTION': '192.168.0.103 56294 192.168.0.101 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ru_RU.UTF-8', 'LC_PAPER': 'ru_RU.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[10.086912] (-) TimerEvent: {}
+[10.188772] (-) TimerEvent: {}
+[10.289490] (-) TimerEvent: {}
+[10.392719] (-) TimerEvent: {}
+[10.493457] (-) TimerEvent: {}
+[10.594218] (-) TimerEvent: {}
+[10.694991] (-) TimerEvent: {}
+[10.797748] (-) TimerEvent: {}
+[10.898437] (-) TimerEvent: {}
+[10.999200] (-) TimerEvent: {}
+[11.099946] (-) TimerEvent: {}
+[11.200689] (-) TimerEvent: {}
+[11.301419] (-) TimerEvent: {}
+[11.402163] (-) TimerEvent: {}
+[11.502944] (-) TimerEvent: {}
+[11.603691] (-) TimerEvent: {}
+[11.704404] (-) TimerEvent: {}
+[11.805691] (-) TimerEvent: {}
+[11.829457] (my_dif_bot_control) StdoutLine: {'line': b'running egg_info\n'}
+[11.830779] (my_dif_bot_bringup) StdoutLine: {'line': b'running egg_info\n'}
+[11.835303] (my_dif_bot_control) StdoutLine: {'line': b'creating ../../build/my_dif_bot_control/my_dif_bot_control.egg-info\n'}
+[11.836050] (my_dif_bot_bringup) StdoutLine: {'line': b'creating ../../build/my_dif_bot_bringup/my_dif_bot_bringup.egg-info\n'}
+[11.844029] (my_dif_bot_description) StdoutLine: {'line': b'running egg_info\n'}
+[11.845702] (my_dif_bot_description) StdoutLine: {'line': b'creating ../../build/my_dif_bot_description/my_dif_bot_description.egg-info\n'}
+[11.905881] (-) TimerEvent: {}
+[11.976850] (my_dif_bot_control) StdoutLine: {'line': b'writing ../../build/my_dif_bot_control/my_dif_bot_control.egg-info/PKG-INFO\n'}
+[11.981189] (my_dif_bot_bringup) StdoutLine: {'line': b'writing ../../build/my_dif_bot_bringup/my_dif_bot_bringup.egg-info/PKG-INFO\n'}
+[11.988000] (my_dif_bot_bringup) StdoutLine: {'line': b'writing dependency_links to ../../build/my_dif_bot_bringup/my_dif_bot_bringup.egg-info/dependency_links.txt\n'}
+[11.988546] (my_dif_bot_bringup) StdoutLine: {'line': b'writing requirements to ../../build/my_dif_bot_bringup/my_dif_bot_bringup.egg-info/requires.txt\n'}
+[11.989131] (my_dif_bot_bringup) StdoutLine: {'line': b'writing top-level names to ../../build/my_dif_bot_bringup/my_dif_bot_bringup.egg-info/top_level.txt\n'}
+[11.989651] (my_dif_bot_bringup) StdoutLine: {'line': b"writing manifest file '../../build/my_dif_bot_bringup/my_dif_bot_bringup.egg-info/SOURCES.txt'\n"}
+[11.990301] (my_dif_bot_control) StdoutLine: {'line': b'writing dependency_links to ../../build/my_dif_bot_control/my_dif_bot_control.egg-info/dependency_links.txt\n'}
+[11.997289] (my_dif_bot_control) StdoutLine: {'line': b'writing entry points to ../../build/my_dif_bot_control/my_dif_bot_control.egg-info/entry_points.txt\n'}
+[11.997919] (my_dif_bot_control) StdoutLine: {'line': b'writing requirements to ../../build/my_dif_bot_control/my_dif_bot_control.egg-info/requires.txt\n'}
+[11.998473] (my_dif_bot_control) StdoutLine: {'line': b'writing top-level names to ../../build/my_dif_bot_control/my_dif_bot_control.egg-info/top_level.txt\n'}
+[12.005434] (my_dif_bot_control) StdoutLine: {'line': b"writing manifest file '../../build/my_dif_bot_control/my_dif_bot_control.egg-info/SOURCES.txt'\n"}
+[12.006069] (-) TimerEvent: {}
+[12.006531] (my_dif_bot_description) StdoutLine: {'line': b'writing ../../build/my_dif_bot_description/my_dif_bot_description.egg-info/PKG-INFO\n'}
+[12.007187] (my_dif_bot_description) StdoutLine: {'line': b'writing dependency_links to ../../build/my_dif_bot_description/my_dif_bot_description.egg-info/dependency_links.txt\n'}
+[12.010836] (my_dif_bot_description) StdoutLine: {'line': b'writing requirements to ../../build/my_dif_bot_description/my_dif_bot_description.egg-info/requires.txt\n'}
+[12.011453] (my_dif_bot_description) StdoutLine: {'line': b'writing top-level names to ../../build/my_dif_bot_description/my_dif_bot_description.egg-info/top_level.txt\n'}
+[12.012075] (my_dif_bot_description) StdoutLine: {'line': b"writing manifest file '../../build/my_dif_bot_description/my_dif_bot_description.egg-info/SOURCES.txt'\n"}
+[12.106270] (-) TimerEvent: {}
+[12.208223] (-) TimerEvent: {}
+[12.283085] (my_dif_bot_control) StdoutLine: {'line': b"reading manifest file '../../build/my_dif_bot_control/my_dif_bot_control.egg-info/SOURCES.txt'\n"}
+[12.284025] (my_dif_bot_bringup) StdoutLine: {'line': b"reading manifest file '../../build/my_dif_bot_bringup/my_dif_bot_bringup.egg-info/SOURCES.txt'\n"}
+[12.287772] (my_dif_bot_bringup) StdoutLine: {'line': b"writing manifest file '../../build/my_dif_bot_bringup/my_dif_bot_bringup.egg-info/SOURCES.txt'\n"}
+[12.288405] (my_dif_bot_bringup) StdoutLine: {'line': b'running build\n'}
+[12.293968] (my_dif_bot_control) StdoutLine: {'line': b"writing manifest file '../../build/my_dif_bot_control/my_dif_bot_control.egg-info/SOURCES.txt'\n"}
+[12.294737] (my_dif_bot_control) StdoutLine: {'line': b'running build\n'}
+[12.295360] (my_dif_bot_control) StdoutLine: {'line': b'running build_py\n'}
+[12.296787] (my_dif_bot_control) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_control/build\n'}
+[12.297461] (my_dif_bot_control) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_control/build/lib\n'}
+[12.298107] (my_dif_bot_control) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_control/build/lib/my_dif_bot_control\n'}
+[12.298653] (my_dif_bot_control) StdoutLine: {'line': b'copying my_dif_bot_control/robot_controller_node.py -> /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_control/build/lib/my_dif_bot_control\n'}
+[12.299249] (my_dif_bot_control) StdoutLine: {'line': b'copying my_dif_bot_control/__init__.py -> /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_control/build/lib/my_dif_bot_control\n'}
+[12.299855] (my_dif_bot_bringup) StdoutLine: {'line': b'running build_py\n'}
+[12.304629] (my_dif_bot_bringup) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_bringup/build\n'}
+[12.305216] (my_dif_bot_bringup) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_bringup/build/lib\n'}
+[12.306143] (my_dif_bot_bringup) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_bringup/build/lib/my_dif_bot_bringup\n'}
+[12.306760] (my_dif_bot_bringup) StdoutLine: {'line': b'copying my_dif_bot_bringup/__init__.py -> /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_bringup/build/lib/my_dif_bot_bringup\n'}
+[12.307222] (my_dif_bot_bringup) StdoutLine: {'line': b'running install\n'}
+[12.307773] (my_dif_bot_control) StdoutLine: {'line': b'running install\n'}
+[12.308400] (-) TimerEvent: {}
+[12.309495] (my_dif_bot_description) StdoutLine: {'line': b"reading manifest file '../../build/my_dif_bot_description/my_dif_bot_description.egg-info/SOURCES.txt'\n"}
+[12.310454] (my_dif_bot_description) StdoutLine: {'line': b"writing manifest file '../../build/my_dif_bot_description/my_dif_bot_description.egg-info/SOURCES.txt'\n"}
+[12.311073] (my_dif_bot_description) StdoutLine: {'line': b'running build\n'}
+[12.311692] (my_dif_bot_description) StdoutLine: {'line': b'running build_py\n'}
+[12.312262] (my_dif_bot_description) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/build\n'}
+[12.312714] (my_dif_bot_description) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/build/lib\n'}
+[12.313135] (my_dif_bot_description) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/build/lib/my_dif_bot_description\n'}
+[12.313655] (my_dif_bot_description) StdoutLine: {'line': b'copying my_dif_bot_description/__init__.py -> /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/build/lib/my_dif_bot_description\n'}
+[12.314176] (my_dif_bot_description) StdoutLine: {'line': b'running install\n'}
+[12.324307] (my_dif_bot_bringup) StdoutLine: {'line': b'running install_lib\n'}
+[12.326471] (my_dif_bot_control) StdoutLine: {'line': b'running install_lib\n'}
+[12.336495] (my_dif_bot_description) StdoutLine: {'line': b'running install_lib\n'}
+[12.408648] (-) TimerEvent: {}
+[12.485519] (my_dif_bot_control) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_control/lib/python3.12/site-packages/my_dif_bot_control\n'}
+[12.486450] (my_dif_bot_bringup) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_bringup/lib/python3.12/site-packages/my_dif_bot_bringup\n'}
+[12.487339] (my_dif_bot_control) StdoutLine: {'line': b'copying /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_control/build/lib/my_dif_bot_control/robot_controller_node.py -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_control/lib/python3.12/site-packages/my_dif_bot_control\n'}
+[12.487970] (my_dif_bot_bringup) StdoutLine: {'line': b'copying /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_bringup/build/lib/my_dif_bot_bringup/__init__.py -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_bringup/lib/python3.12/site-packages/my_dif_bot_bringup\n'}
+[12.488882] (my_dif_bot_control) StdoutLine: {'line': b'copying /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_control/build/lib/my_dif_bot_control/__init__.py -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_control/lib/python3.12/site-packages/my_dif_bot_control\n'}
+[12.490807] (my_dif_bot_bringup) StdoutLine: {'line': b'byte-compiling /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_bringup/lib/python3.12/site-packages/my_dif_bot_bringup/__init__.py to __init__.cpython-312.pyc\n'}
+[12.491691] (my_dif_bot_control) StdoutLine: {'line': b'byte-compiling /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_control/lib/python3.12/site-packages/my_dif_bot_control/robot_controller_node.py to robot_controller_node.cpython-312.pyc\n'}
+[12.492483] (my_dif_bot_bringup) StdoutLine: {'line': b'running install_data\n'}
+[12.493534] (my_dif_bot_bringup) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_bringup/share/ament_index\n'}
+[12.494252] (my_dif_bot_bringup) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_bringup/share/ament_index/resource_index\n'}
+[12.495228] (my_dif_bot_bringup) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_bringup/share/ament_index/resource_index/packages\n'}
+[12.496006] (my_dif_bot_bringup) StdoutLine: {'line': b'copying resource/my_dif_bot_bringup -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_bringup/share/ament_index/resource_index/packages\n'}
+[12.496966] (my_dif_bot_description) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages/my_dif_bot_description\n'}
+[12.497830] (my_dif_bot_bringup) StdoutLine: {'line': b'copying package.xml -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_bringup/share/my_dif_bot_bringup\n'}
+[12.498448] (my_dif_bot_bringup) StdoutLine: {'line': b'running install_egg_info\n'}
+[12.499267] (my_dif_bot_description) StdoutLine: {'line': b'copying /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/build/lib/my_dif_bot_description/__init__.py -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages/my_dif_bot_description\n'}
+[12.500310] (my_dif_bot_control) StdoutLine: {'line': b'byte-compiling /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_control/lib/python3.12/site-packages/my_dif_bot_control/__init__.py to __init__.cpython-312.pyc\n'}
+[12.501194] (my_dif_bot_description) StdoutLine: {'line': b'byte-compiling /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages/my_dif_bot_description/__init__.py to __init__.cpython-312.pyc\n'}
+[12.502157] (my_dif_bot_control) StdoutLine: {'line': b'running install_data\n'}
+[12.503117] (my_dif_bot_control) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_control/share/ament_index\n'}
+[12.503924] (my_dif_bot_control) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_control/share/ament_index/resource_index\n'}
+[12.505961] (my_dif_bot_description) StdoutLine: {'line': b'running install_data\n'}
+[12.506725] (my_dif_bot_description) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/ament_index\n'}
+[12.508059] (my_dif_bot_control) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_control/share/ament_index/resource_index/packages\n'}
+[12.508667] (-) TimerEvent: {}
+[12.509114] (my_dif_bot_control) StdoutLine: {'line': b'copying resource/my_dif_bot_control -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_control/share/ament_index/resource_index/packages\n'}
+[12.510776] (my_dif_bot_description) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/ament_index/resource_index\n'}
+[12.511356] (my_dif_bot_control) StdoutLine: {'line': b'copying package.xml -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_control/share/my_dif_bot_control\n'}
+[12.512293] (my_dif_bot_description) StdoutLine: {'line': b'creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/ament_index/resource_index/packages\n'}
+[12.512914] (my_dif_bot_control) StdoutLine: {'line': b'running install_egg_info\n'}
+[12.513469] (my_dif_bot_description) StdoutLine: {'line': b'copying resource/my_dif_bot_description -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/ament_index/resource_index/packages\n'}
+[12.514066] (my_dif_bot_description) StdoutLine: {'line': b'copying package.xml -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/my_dif_bot_description\n'}
+[12.515024] (my_dif_bot_description) StdoutLine: {'line': b'running install_egg_info\n'}
+[12.608828] (-) TimerEvent: {}
+[12.661871] (my_dif_bot_bringup) StdoutLine: {'line': b'Copying ../../build/my_dif_bot_bringup/my_dif_bot_bringup.egg-info to /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_bringup/lib/python3.12/site-packages/my_dif_bot_bringup-0.0.0-py3.12.egg-info\n'}
+[12.669736] (my_dif_bot_bringup) StdoutLine: {'line': b'running install_scripts\n'}
+[12.671111] (my_dif_bot_control) StdoutLine: {'line': b'Copying ../../build/my_dif_bot_control/my_dif_bot_control.egg-info to /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_control/lib/python3.12/site-packages/my_dif_bot_control-0.0.0-py3.12.egg-info\n'}
+[12.673438] (my_dif_bot_description) StdoutLine: {'line': b'Copying ../../build/my_dif_bot_description/my_dif_bot_description.egg-info to /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages/my_dif_bot_description-0.0.0-py3.12.egg-info\n'}
+[12.681386] (my_dif_bot_control) StdoutLine: {'line': b'running install_scripts\n'}
+[12.682516] (my_dif_bot_description) StdoutLine: {'line': b'running install_scripts\n'}
+[12.709007] (-) TimerEvent: {}
+[12.809713] (-) TimerEvent: {}
+[12.910427] (-) TimerEvent: {}
+[13.011635] (-) TimerEvent: {}
+[13.112377] (-) TimerEvent: {}
+[13.213120] (-) TimerEvent: {}
+[13.313833] (-) TimerEvent: {}
+[13.414995] (-) TimerEvent: {}
+[13.516259] (-) TimerEvent: {}
+[13.617052] (-) TimerEvent: {}
+[13.703761] (my_dif_bot_control) StdoutLine: {'line': b'Installing robot_driver_node script to /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_control/lib/my_dif_bot_control\n'}
+[13.709355] (my_dif_bot_description) StdoutLine: {'line': b"writing list of installed files to '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/install.log'\n"}
+[13.713086] (my_dif_bot_control) StdoutLine: {'line': b"writing list of installed files to '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_control/install.log'\n"}
+[13.719663] (my_dif_bot_bringup) StdoutLine: {'line': b"writing list of installed files to '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_bringup/install.log'\n"}
+[13.723063] (-) TimerEvent: {}
+[13.825125] (-) TimerEvent: {}
+[13.926920] (-) TimerEvent: {}
+[13.988400] (my_dif_bot_control) CommandEnded: {'returncode': 0}
+[14.027665] (-) TimerEvent: {}
+[14.061234] (my_dif_bot_control) JobEnded: {'identifier': 'my_dif_bot_control', 'rc': 0}
+[14.065755] (my_dif_bot_description) CommandEnded: {'returncode': 0}
+[14.095633] (my_dif_bot_description) JobEnded: {'identifier': 'my_dif_bot_description', 'rc': 0}
+[14.100744] (my_dif_bot_bringup) CommandEnded: {'returncode': 0}
+[14.127818] (-) TimerEvent: {}
+[14.130070] (my_dif_bot_bringup) JobEnded: {'identifier': 'my_dif_bot_bringup', 'rc': 0}
+[14.133298] (-) EventReactorShutdown: {}

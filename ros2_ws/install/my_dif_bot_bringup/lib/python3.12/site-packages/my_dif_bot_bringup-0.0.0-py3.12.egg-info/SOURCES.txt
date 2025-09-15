@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+../../build/my_dif_bot_bringup/my_dif_bot_bringup.egg-info/PKG-INFO
+../../build/my_dif_bot_bringup/my_dif_bot_bringup.egg-info/SOURCES.txt
+../../build/my_dif_bot_bringup/my_dif_bot_bringup.egg-info/dependency_links.txt
+../../build/my_dif_bot_bringup/my_dif_bot_bringup.egg-info/requires.txt
+../../build/my_dif_bot_bringup/my_dif_bot_bringup.egg-info/top_level.txt
+../../build/my_dif_bot_bringup/my_dif_bot_bringup.egg-info/zip-safe
+my_dif_bot_bringup/__init__.py
+resource/my_dif_bot_bringup
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
