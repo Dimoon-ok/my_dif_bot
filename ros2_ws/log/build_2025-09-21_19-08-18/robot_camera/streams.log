@@ -1,0 +1,22 @@
+[7.946s] Invoking command in '/home/di/my_dif_bot/ros2_ws/src/robot_camera': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/di/my_dif_bot/ros2_ws/build/robot_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/di/my_dif_bot/ros2_ws/install/robot_camera/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_camera build --build-base /home/di/my_dif_bot/ros2_ws/build/robot_camera/build install --record /home/di/my_dif_bot/ros2_ws/build/robot_camera/install.log --single-version-externally-managed install_data
+[10.577s] running egg_info
+[10.795s] writing ../../build/robot_camera/robot_camera.egg-info/PKG-INFO
+[10.797s] writing dependency_links to ../../build/robot_camera/robot_camera.egg-info/dependency_links.txt
+[10.799s] writing entry points to ../../build/robot_camera/robot_camera.egg-info/entry_points.txt
+[10.800s] writing requirements to ../../build/robot_camera/robot_camera.egg-info/requires.txt
+[10.804s] writing top-level names to ../../build/robot_camera/robot_camera.egg-info/top_level.txt
+[11.217s] reading manifest file '../../build/robot_camera/robot_camera.egg-info/SOURCES.txt'
+[11.220s] writing manifest file '../../build/robot_camera/robot_camera.egg-info/SOURCES.txt'
+[11.222s] running build
+[11.223s] running build_py
+[11.224s] running install
+[11.262s] running install_lib
+[11.480s] running install_data
+[11.482s] copying config/camera_params.yaml -> /home/di/my_dif_bot/ros2_ws/install/robot_camera/share/robot_camera/config
+[11.483s] running install_egg_info
+[11.723s] removing '/home/di/my_dif_bot/ros2_ws/install/robot_camera/lib/python3.12/site-packages/robot_camera-0.0.0-py3.12.egg-info' (and everything under it)
+[11.725s] Copying ../../build/robot_camera/robot_camera.egg-info to /home/di/my_dif_bot/ros2_ws/install/robot_camera/lib/python3.12/site-packages/robot_camera-0.0.0-py3.12.egg-info
+[11.736s] running install_scripts
+[13.198s] Installing camera_node script to /home/di/my_dif_bot/ros2_ws/install/robot_camera/lib/robot_camera
+[13.200s] writing list of installed files to '/home/di/my_dif_bot/ros2_ws/build/robot_camera/install.log'
+[13.505s] Invoked command in '/home/di/my_dif_bot/ros2_ws/src/robot_camera' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/di/my_dif_bot/ros2_ws/build/robot_camera/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/di/my_dif_bot/ros2_ws/install/robot_camera/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_camera build --build-base /home/di/my_dif_bot/ros2_ws/build/robot_camera/build install --record /home/di/my_dif_bot/ros2_ws/build/robot_camera/install.log --single-version-externally-managed install_data
