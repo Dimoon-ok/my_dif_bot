@@ -1,0 +1,40 @@
+[5.187s] Invoking command in '/home/di/my_dif_bot/ros2_ws/src/my_dif_bot_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_dif_bot_description build --build-base /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/build install --record /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/install.log --single-version-externally-managed install_data
+[6.726s] running egg_info
+[6.728s] creating ../../build/my_dif_bot_description/my_dif_bot_description.egg-info
+[6.850s] writing ../../build/my_dif_bot_description/my_dif_bot_description.egg-info/PKG-INFO
+[6.851s] writing dependency_links to ../../build/my_dif_bot_description/my_dif_bot_description.egg-info/dependency_links.txt
+[6.852s] writing requirements to ../../build/my_dif_bot_description/my_dif_bot_description.egg-info/requires.txt
+[6.853s] writing top-level names to ../../build/my_dif_bot_description/my_dif_bot_description.egg-info/top_level.txt
+[6.854s] writing manifest file '../../build/my_dif_bot_description/my_dif_bot_description.egg-info/SOURCES.txt'
+[7.087s] reading manifest file '../../build/my_dif_bot_description/my_dif_bot_description.egg-info/SOURCES.txt'
+[7.090s] writing manifest file '../../build/my_dif_bot_description/my_dif_bot_description.egg-info/SOURCES.txt'
+[7.091s] running build
+[7.092s] running build_py
+[7.093s] creating /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/build
+[7.093s] creating /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/build/lib
+[7.094s] creating /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/build/lib/my_dif_bot_description
+[7.095s] copying my_dif_bot_description/__init__.py -> /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/build/lib/my_dif_bot_description
+[7.095s] running install
+[7.123s] running install_lib
+[7.256s] creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages/my_dif_bot_description
+[7.258s] copying /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/build/lib/my_dif_bot_description/__init__.py -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages/my_dif_bot_description
+[7.261s] byte-compiling /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages/my_dif_bot_description/__init__.py to __init__.cpython-312.pyc
+[7.263s] running install_data
+[7.265s] creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/ament_index
+[7.265s] creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/ament_index/resource_index
+[7.266s] creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/ament_index/resource_index/packages
+[7.267s] copying resource/my_dif_bot_description -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/ament_index/resource_index/packages
+[7.268s] copying package.xml -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/my_dif_bot_description
+[7.269s] creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/my_dif_bot_description/launch
+[7.270s] copying launch/display.launch.py -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/my_dif_bot_description/launch
+[7.271s] creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/my_dif_bot_description/urdf
+[7.272s] copying urdf/robot_core.xacro -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/my_dif_bot_description/urdf
+[7.273s] copying urdf/inertial_macros.xacro -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/my_dif_bot_description/urdf
+[7.275s] copying urdf/robot.urdf.xacro -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/my_dif_bot_description/urdf
+[7.276s] creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/my_dif_bot_description/rviz
+[7.277s] copying rviz/urdf.rviz -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/my_dif_bot_description/rviz
+[7.278s] running install_egg_info
+[7.396s] Copying ../../build/my_dif_bot_description/my_dif_bot_description.egg-info to /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages/my_dif_bot_description-0.0.0-py3.12.egg-info
+[7.402s] running install_scripts
+[8.231s] writing list of installed files to '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/install.log'
+[8.383s] Invoked command in '/home/di/my_dif_bot/ros2_ws/src/my_dif_bot_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_dif_bot_description build --build-base /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/build install --record /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/install.log --single-version-externally-managed install_data

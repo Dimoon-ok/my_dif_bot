@@ -1,0 +1,22 @@
+[8.047s] Invoking command in '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/build --no-deps symlink_data --force
+[10.727s] running develop
+[12.599s] running egg_info
+[12.804s] writing my_dif_bot_description.egg-info/PKG-INFO
+[12.808s] writing dependency_links to my_dif_bot_description.egg-info/dependency_links.txt
+[12.813s] writing requirements to my_dif_bot_description.egg-info/requires.txt
+[12.814s] writing top-level names to my_dif_bot_description.egg-info/top_level.txt
+[13.170s] reading manifest file 'my_dif_bot_description.egg-info/SOURCES.txt'
+[13.178s] writing manifest file 'my_dif_bot_description.egg-info/SOURCES.txt'
+[13.356s] running build_ext
+[13.364s] Creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages/my-dif-bot-description.egg-link (link to .)
+[13.368s] 
+[13.369s] Installed /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description
+[13.370s] running symlink_data
+[13.371s] symbolically linking /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/resource/my_dif_bot_description -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/ament_index/resource_index/packages
+[13.371s] symbolically linking /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/package.xml -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/my_dif_bot_description
+[13.372s] symbolically linking /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/launch/display.launch.py -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/my_dif_bot_description/launch
+[13.373s] symbolically linking /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/urdf/robot_core.xacro -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/my_dif_bot_description/urdf
+[13.374s] symbolically linking /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/urdf/inertial_macros.xacro -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/my_dif_bot_description/urdf
+[13.375s] symbolically linking /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/urdf/robot.urdf.xacro -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/my_dif_bot_description/urdf
+[13.376s] symbolically linking /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/rviz/urdf.rviz -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/my_dif_bot_description/rviz
+[13.629s] Invoked command in '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/build --no-deps symlink_data --force

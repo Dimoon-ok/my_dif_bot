@@ -1,7 +1,0 @@
-[0.000000] (-) TimerEvent: {}
-[0.000774] (-) JobUnselected: {'identifier': 'foxglove_bridge'}
-[0.001079] (-) JobUnselected: {'identifier': 'my_dif_bot_bringup'}
-[0.001227] (-) JobUnselected: {'identifier': 'my_dif_bot_control'}
-[0.001621] (-) JobUnselected: {'identifier': 'my_dif_bot_description'}
-[0.002191] (-) JobUnselected: {'identifier': 'robot_camera'}
-[0.003620] (-) EventReactorShutdown: {}

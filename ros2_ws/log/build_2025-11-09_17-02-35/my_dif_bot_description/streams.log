@@ -1,0 +1,20 @@
+[4.726s] Invoking command in '/home/di/my_dif_bot/ros2_ws/src/my_dif_bot_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_dif_bot_description build --build-base /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/build install --record /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/install.log --single-version-externally-managed install_data
+[6.223s] running egg_info
+[6.336s] writing ../../build/my_dif_bot_description/my_dif_bot_description.egg-info/PKG-INFO
+[6.338s] writing dependency_links to ../../build/my_dif_bot_description/my_dif_bot_description.egg-info/dependency_links.txt
+[6.340s] writing requirements to ../../build/my_dif_bot_description/my_dif_bot_description.egg-info/requires.txt
+[6.341s] writing top-level names to ../../build/my_dif_bot_description/my_dif_bot_description.egg-info/top_level.txt
+[6.615s] reading manifest file '../../build/my_dif_bot_description/my_dif_bot_description.egg-info/SOURCES.txt'
+[6.620s] writing manifest file '../../build/my_dif_bot_description/my_dif_bot_description.egg-info/SOURCES.txt'
+[6.622s] running build
+[6.623s] running build_py
+[6.624s] running install
+[6.659s] running install_lib
+[6.821s] running install_data
+[6.823s] copying urdf/robot_core.xacro -> /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/share/my_dif_bot_description/urdf
+[6.825s] running install_egg_info
+[6.957s] removing '/home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages/my_dif_bot_description-0.0.0-py3.12.egg-info' (and everything under it)
+[6.959s] Copying ../../build/my_dif_bot_description/my_dif_bot_description.egg-info to /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages/my_dif_bot_description-0.0.0-py3.12.egg-info
+[6.964s] running install_scripts
+[7.815s] writing list of installed files to '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/install.log'
+[7.967s] Invoked command in '/home/di/my_dif_bot/ros2_ws/src/my_dif_bot_description' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/my_dif_bot_description build --build-base /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/build install --record /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/install.log --single-version-externally-managed install_data

@@ -1,0 +1,121 @@
+[0.000000] (-) TimerEvent: {}
+[0.000891] (-) JobUnselected: {'identifier': 'foxglove_bridge'}
+[0.001651] (-) JobUnselected: {'identifier': 'my_dif_bot_bringup'}
+[0.002059] (-) JobUnselected: {'identifier': 'my_dif_bot_control'}
+[0.002239] (-) JobUnselected: {'identifier': 'robot_camera'}
+[0.004642] (-) JobUnselected: {'identifier': 'robot_cv'}
+[0.005464] (-) JobUnselected: {'identifier': 'rplidar_ros'}
+[0.005943] (my_dif_bot_description) JobQueued: {'identifier': 'my_dif_bot_description', 'dependencies': OrderedDict()}
+[0.008585] (my_dif_bot_description) JobStarted: {'identifier': 'my_dif_bot_description'}
+[0.099167] (-) TimerEvent: {}
+[0.201279] (-) TimerEvent: {}
+[0.302193] (-) TimerEvent: {}
+[0.403438] (-) TimerEvent: {}
+[0.504252] (-) TimerEvent: {}
+[0.605074] (-) TimerEvent: {}
+[0.708732] (-) TimerEvent: {}
+[0.811965] (-) TimerEvent: {}
+[0.919571] (-) TimerEvent: {}
+[1.023380] (-) TimerEvent: {}
+[1.128133] (-) TimerEvent: {}
+[1.229068] (-) TimerEvent: {}
+[1.331386] (-) TimerEvent: {}
+[1.432982] (-) TimerEvent: {}
+[1.534444] (-) TimerEvent: {}
+[1.635099] (-) TimerEvent: {}
+[1.737473] (-) TimerEvent: {}
+[1.838281] (-) TimerEvent: {}
+[1.939888] (-) TimerEvent: {}
+[2.040624] (-) TimerEvent: {}
+[2.141395] (-) TimerEvent: {}
+[2.242032] (-) TimerEvent: {}
+[2.342738] (-) TimerEvent: {}
+[2.443450] (-) TimerEvent: {}
+[2.544179] (-) TimerEvent: {}
+[2.644990] (-) TimerEvent: {}
+[2.745702] (-) TimerEvent: {}
+[2.846407] (-) TimerEvent: {}
+[2.947014] (-) TimerEvent: {}
+[3.047763] (-) TimerEvent: {}
+[3.148422] (-) TimerEvent: {}
+[3.249052] (-) TimerEvent: {}
+[3.349817] (-) TimerEvent: {}
+[3.450474] (-) TimerEvent: {}
+[3.551134] (-) TimerEvent: {}
+[3.651861] (-) TimerEvent: {}
+[3.752554] (-) TimerEvent: {}
+[3.853198] (-) TimerEvent: {}
+[3.953897] (-) TimerEvent: {}
+[4.054610] (-) TimerEvent: {}
+[4.155281] (-) TimerEvent: {}
+[4.255928] (-) TimerEvent: {}
+[4.356629] (-) TimerEvent: {}
+[4.457258] (-) TimerEvent: {}
+[4.557942] (-) TimerEvent: {}
+[4.658676] (-) TimerEvent: {}
+[4.759426] (-) TimerEvent: {}
+[4.860069] (-) TimerEvent: {}
+[4.961144] (-) TimerEvent: {}
+[5.061818] (-) TimerEvent: {}
+[5.162450] (-) TimerEvent: {}
+[5.263085] (-) TimerEvent: {}
+[5.363857] (-) TimerEvent: {}
+[5.464777] (-) TimerEvent: {}
+[5.491588] (my_dif_bot_description) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/build', '--no-deps', 'symlink_data'], 'cwd': '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description', 'env': {'PYTHON_BASIC_REPL': '1', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'LANGUAGE': 'ru_RU:en', 'USER': 'di', 'SSH_CLIENT': '192.168.0.106 38218 22', 'LC_TIME': 'ru_RU.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/home/di/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/extensions/git/dist/askpass.sh', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/aarch64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'BROWSER': '/home/di/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/bin/helpers/browser.sh', 'HOME': '/home/di', 'OLDPWD': '/home/di/my_dif_bot/ros2_ws/src', 'TERM_PROGRAM_VERSION': '1.105.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/1002/vscode-ipc-b66d04a5-4038-453e-8a84-8b90edf08fce.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/home/di/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/extensions/git/dist/askpass-main.js', 'LC_MONETARY': 'ru_RU.UTF-8', 'VSCODE_GIT_ASKPASS_NODE': '/home/di/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/cert.pem', 'PYDEVD_DISABLE_FILE_VALIDATION': '1', 'BUNDLED_DEBUGPY_PATH': '/home/di/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-arm64/bundled/libs/debugpy', 'VSCODE_PYTHON_AUTOACTIVATE_GUARD': '1', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1002/bus', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/di/my_dif_bot/ros2_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'di', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '3', 'PATH': '/home/di/bin:/home/di/.vscode-server/cli/servers/Stable-7d842fb85a0275a4a8e4d7e040d2625abbf7f084/server/bin/remote-cli:/home/di/bin:/home/di/bin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/di/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/di/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-arm64/bundled/scripts/noConfigScripts:/home/di/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand', 'PAPERSIZE': 'a4', 'LC_ADDRESS': 'ru_RU.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1002', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'VSCODE_DEBUGPY_ADAPTER_ENDPOINTS': '/home/di/.vscode-server/extensions/ms-python.debugpy-2025.14.1-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-b770fd21c68fc9f6.txt', 'LANG': 'ru_RU.UTF-8', 'PYTHONSTARTUP': '/home/di/.vscode-server/data/User/workspaceStorage/44aa491a07900fb7bb2e8e0d41c89fb3/ms-python.python/pythonrc.py', 'LC_TELEPHONE': 'ru_RU.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/1002/vscode-git-73fe0eec1e.sock', 'TERM_PROGRAM': 'vscode', 'ROS_DOMAIN_ID': '7', 'AMENT_PREFIX_PATH': '/home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description:/opt/ros/jazzy', 'SHELL': '/bin/bash', 'LC_NAME': 'ru_RU.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ru_RU.UTF-8', 'LC_IDENTIFICATION': 'ru_RU.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '192.168.0.106 38218 192.168.0.101 22', 'XDG_DATA_DIRS': '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages:/home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description:/home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'ru_RU.UTF-8', 'LC_PAPER': 'ru_RU.UTF-8', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor'}, 'shell': False}
+[5.564955] (-) TimerEvent: {}
+[5.665805] (-) TimerEvent: {}
+[5.766475] (-) TimerEvent: {}
+[5.867116] (-) TimerEvent: {}
+[5.967839] (-) TimerEvent: {}
+[6.068481] (-) TimerEvent: {}
+[6.169106] (-) TimerEvent: {}
+[6.269875] (-) TimerEvent: {}
+[6.370548] (-) TimerEvent: {}
+[6.471171] (-) TimerEvent: {}
+[6.571817] (-) TimerEvent: {}
+[6.672465] (-) TimerEvent: {}
+[6.773101] (-) TimerEvent: {}
+[6.873808] (-) TimerEvent: {}
+[6.974599] (-) TimerEvent: {}
+[7.075266] (-) TimerEvent: {}
+[7.175914] (-) TimerEvent: {}
+[7.276592] (-) TimerEvent: {}
+[7.377273] (-) TimerEvent: {}
+[7.471393] (my_dif_bot_description) StdoutLine: {'line': b'running develop\n'}
+[7.477414] (-) TimerEvent: {}
+[7.578004] (-) TimerEvent: {}
+[7.678678] (-) TimerEvent: {}
+[7.779304] (-) TimerEvent: {}
+[7.880055] (-) TimerEvent: {}
+[7.980847] (-) TimerEvent: {}
+[8.081508] (-) TimerEvent: {}
+[8.182163] (-) TimerEvent: {}
+[8.282826] (-) TimerEvent: {}
+[8.383465] (-) TimerEvent: {}
+[8.484065] (-) TimerEvent: {}
+[8.584775] (-) TimerEvent: {}
+[8.685450] (-) TimerEvent: {}
+[8.786105] (-) TimerEvent: {}
+[8.848852] (my_dif_bot_description) StdoutLine: {'line': b'running egg_info\n'}
+[8.886272] (-) TimerEvent: {}
+[8.974870] (my_dif_bot_description) StdoutLine: {'line': b'writing my_dif_bot_description.egg-info/PKG-INFO\n'}
+[8.976201] (my_dif_bot_description) StdoutLine: {'line': b'writing dependency_links to my_dif_bot_description.egg-info/dependency_links.txt\n'}
+[8.978653] (my_dif_bot_description) StdoutLine: {'line': b'writing requirements to my_dif_bot_description.egg-info/requires.txt\n'}
+[8.983898] (my_dif_bot_description) StdoutLine: {'line': b'writing top-level names to my_dif_bot_description.egg-info/top_level.txt\n'}
+[8.986445] (-) TimerEvent: {}
+[9.087103] (-) TimerEvent: {}
+[9.187794] (-) TimerEvent: {}
+[9.233197] (my_dif_bot_description) StdoutLine: {'line': b"reading manifest file 'my_dif_bot_description.egg-info/SOURCES.txt'\n"}
+[9.237523] (my_dif_bot_description) StdoutLine: {'line': b"writing manifest file 'my_dif_bot_description.egg-info/SOURCES.txt'\n"}
+[9.287951] (-) TimerEvent: {}
+[9.362954] (my_dif_bot_description) StdoutLine: {'line': b'running build_ext\n'}
+[9.363908] (my_dif_bot_description) StdoutLine: {'line': b'Creating /home/di/my_dif_bot/ros2_ws/install/my_dif_bot_description/lib/python3.12/site-packages/my-dif-bot-description.egg-link (link to .)\n'}
+[9.366527] (my_dif_bot_description) StdoutLine: {'line': b'\n'}
+[9.367268] (my_dif_bot_description) StdoutLine: {'line': b'Installed /home/di/my_dif_bot/ros2_ws/build/my_dif_bot_description\n'}
+[9.367808] (my_dif_bot_description) StdoutLine: {'line': b'running symlink_data\n'}
+[9.388197] (-) TimerEvent: {}
+[9.489246] (-) TimerEvent: {}
+[9.545393] (my_dif_bot_description) CommandEnded: {'returncode': 0}
+[9.589478] (-) TimerEvent: {}
+[9.613799] (my_dif_bot_description) JobEnded: {'identifier': 'my_dif_bot_description', 'rc': 0}
+[9.617793] (-) EventReactorShutdown: {}
