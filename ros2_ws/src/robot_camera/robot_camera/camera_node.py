@@ -5,6 +5,7 @@ from cv_bridge import CvBridge
 import cv2
 import time
 
+
 class CameraNode(Node):
     def __init__(self):
         super().__init__('camera_node')
@@ -36,15 +37,16 @@ class CameraNode(Node):
         self.prev_time = time.time()
         self.fps = 0
         self.frame_count = 0
-        self.fps_update_interval = 1
+        self.fps_update_interval = 2
         self.last_fps_update = time.time()
 
+        self.publisher_raw = self.create_publisher(
+            Image, 'camera/image_raw', 10)
+
         if self.compressed:
-            self.publisher = self.create_publisher(CompressedImage, 'camera/image_raw/compressed', 10)
-            self.get_logger().info("Publishing compressed images")
-        else:
-            self.publisher = self.create_publisher(Image, 'camera/image_raw', 10)
-            self.get_logger().info("Publishing raw images")
+            self.publisher_compressed = self.create_publisher(
+                CompressedImage, 'camera/image_raw/compressed', 10)
+
         self.bridge = CvBridge()
 
         self.timer = self.create_timer(1/fps, self.timer_callback)
@@ -78,16 +80,18 @@ class CameraNode(Node):
                     font_color, font_thickness, cv2.LINE_AA)
 
         # Добавляем полупрозрачный фон для лучшей читаемости
-        text_size = cv2.getTextSize(fps_text, font, font_scale, font_thickness)[0]
+        text_size = cv2.getTextSize(
+            fps_text, font, font_scale, font_thickness)[0]
         bg_position = (position[0] - 5, position[1] - text_size[1] - 5)
         bg_size = (text_size[0] + 10, text_size[1] + 10)
 
         # Создаем полупрозрачный прямоугольник
         overlay = frame.copy()
         cv2.rectangle(overlay,
-                        (bg_position[0], bg_position[1]),
-                        (bg_position[0] + bg_size[0], bg_position[1] + bg_size[1]),
-                        (0, 0, 0), -1)
+                      (bg_position[0], bg_position[1]),
+                      (bg_position[0] + bg_size[0],
+                       bg_position[1] + bg_size[1]),
+                      (0, 0, 0), -1)
 
         # Накладываем полупрозрачный фон
         alpha = 0.6  # прозрачность
@@ -98,14 +102,25 @@ class CameraNode(Node):
         if ret:
             current_fps = self.calculate_fps()
             self.draw_fps_on_frame(frame, current_fps)
-            #msg = self.bridge.cv2_to_compressed_imgmsg(frame, dst_format='jpeg')
+
+            timestamp = self.get_clock().now().to_msg()
+
+            # Публикация RAW
+            msg_raw = self.bridge.cv2_to_imgmsg(frame, encoding='bgr8')
+            msg_raw.header.stamp = timestamp
+            msg_raw.header.frame_id = "camera_link"
+            self.publisher_raw.publish(msg_raw)
+
+            # Публикация Compressed
             if self.compressed:
-                msg = self.bridge.cv2_to_compressed_imgmsg(frame, dst_format='jpeg')
-            else:
-                msg = self.bridge.cv2_to_imgmsg(frame, encoding='bgr8')
-            self.publisher.publish(msg)
+                msg_compressed = self.bridge.cv2_to_compressed_imgmsg(
+                    frame, dst_format='jpeg')
+                msg_compressed.header.stamp = timestamp
+                msg_compressed.header.frame_id = "camera_link"
+                self.publisher_compressed.publish(msg_compressed)
         else:
             self.get_logger().warn("Frame not captured")
+
 
 def main(args=None):
     rclpy.init(args=args)

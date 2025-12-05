@@ -15,7 +15,7 @@ setup(
         (os.path.join('share', package_name, 'launch'), glob('launch/*.py')),
         (os.path.join('share', package_name, 'config'), glob('config/*.yaml')),
     ],
-    install_requires=['setuptools'],
+    install_requires=['setuptools', "numpy", "opencv-python"],
     zip_safe=True,
     maintainer='di',
     maintainer_email='pudovkindima147@gmail.com',
@@ -25,6 +25,7 @@ setup(
     entry_points={
         'console_scripts': [
             'camera_node = robot_camera.camera_node:main',
+            'object_follower_node = robot_camera.object_follower_node:main',
         ],
     },
 )
