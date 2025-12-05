@@ -8,6 +8,15 @@ from PyQt5.QtWidgets import (QApplication, QMainWindow, QVBoxLayout, QHBoxLayout
                              QWidget, QLabel, QDoubleSpinBox, QPushButton, QGroupBox)
 from PyQt5.QtCore import QTimer
 import pyqtgraph as pg
+import os
+
+# Добавляем возможность опционально использовать roslibpy/rosbridge
+try:
+    import roslibpy
+    ROSLIBPY_AVAILABLE = True
+except Exception:
+    roslibpy = None
+    ROSLIBPY_AVAILABLE = False
 
 
 class RobotGuiNode(Node):
@@ -34,6 +43,64 @@ class RobotGuiNode(Node):
             self.actual_l = msg.data[1]
             self.target_r = msg.data[2]
             self.actual_r = msg.data[3]
+
+    # новый удобный метод, чтобы MainWindow вызывал spin_once унифицированно
+    def spin_once(self, timeout_sec=0):
+        rclpy.spin_once(self, timeout_sec=timeout_sec)
+
+
+# Новый класс-обёртка для подключения через rosbridge (roslibpy)
+class RosBridgeClient:
+    def __init__(self, host='localhost', port=9090):
+        if not ROSLIBPY_AVAILABLE:
+            raise RuntimeError(
+                "roslibpy is not installed. Install with: pip install roslibpy")
+        self.ros = roslibpy.Ros(host=host, port=port)
+        self.ros.run()
+        # publisher и subscriber через roslibpy
+        self.pid_pub = roslibpy.Topic(
+            self.ros, '/set_pid', 'std_msgs/Float32MultiArray')
+        self.debug_sub = roslibpy.Topic(
+            self.ros, '/robot_debug_info', 'std_msgs/Float32MultiArray')
+        self.target_l = 0.0
+        self.actual_l = 0.0
+        self.target_r = 0.0
+        self.actual_r = 0.0
+        self.debug_sub.subscribe(self._debug_callback)
+
+    def send_pid(self, kp, ki, kd, kff):
+        msg = roslibpy.Message(
+            {'data': [float(kp), float(ki), float(kd), float(kff)]})
+        self.pid_pub.publish(msg)
+        # нет логгера rclpy; печатаем в stdout
+        print(f"[rosbridge] Published PID: {msg['data']}")
+
+    def _debug_callback(self, message):
+        data = message.get('data', [])
+        if len(data) >= 4:
+            try:
+                self.target_l = float(data[0])
+                self.actual_l = float(data[1])
+                self.target_r = float(data[2])
+                self.actual_r = float(data[3])
+            except Exception:
+                pass
+
+    # Для совместимости с RobotGuiNode
+    def spin_once(self, timeout_sec=0):
+        # roslibpy работает через колбеки; ничего делать не нужно здесь
+        pass
+
+    def destroy(self):
+        try:
+            self.debug_sub.unsubscribe()
+            self.pid_pub.unadvertise()
+        except Exception:
+            pass
+        try:
+            self.ros.terminate()
+        except Exception:
+            pass
 
 
 class MainWindow(QMainWindow):
@@ -114,7 +181,8 @@ class MainWindow(QMainWindow):
 
     def update_loop(self):
         # Крутим ноду ROS, чтобы получить сообщения
-        rclpy.spin_once(self.ros_node, timeout_sec=0)
+        # Используем унифицированный метод, который работает и для rclpy, и для roslibpy
+        self.ros_node.spin_once(timeout_sec=0)
 
         # Обновляем данные графиков
         self.target_data.append(self.ros_node.target_l)
@@ -129,8 +197,40 @@ class MainWindow(QMainWindow):
 
 
 def main(args=None):
-    rclpy.init(args=args)
-    ros_node = RobotGuiNode()
+    # Поддержка запуска в режиме rosbridge: --bridge HOST[:PORT]
+    bridge_host = None
+    if args is None:
+        argv = sys.argv[1:]
+    else:
+        argv = list(args)
+    for i, a in enumerate(argv):
+        if a.startswith('--bridge'):
+            # форматы: --bridge 192.168.1.10:9090 или --bridge=192.168.1.10:9090
+            if '=' in a:
+                bridge_host = a.split('=', 1)[1]
+            elif i + 1 < len(argv):
+                bridge_host = argv[i + 1]
+
+    if bridge_host:
+        # парсим host[:port]
+        if ':' in bridge_host:
+            host, port = bridge_host.split(':', 1)
+            port = int(port)
+        else:
+            host = bridge_host
+            port = 9090
+        print(f"Starting GUI in rosbridge mode, connecting to {host}:{port}")
+        ros_node = RosBridgeClient(host=host, port=port)
+        rclpy_inited = False
+    else:
+        rclpy.init(args=args)
+        ros_node = RobotGuiNode()
+        rclpy_inited = True
+
+    # Если запускаете локально на Raspberry Pi с монитором, DISPLAY обычно установлен.
+    # Если DISPLAY не установлен — GUI в локальной консоли не откроется (нужна X-сессия или VNC).
+    if not bridge_host and sys.platform.startswith('linux') and not os.environ.get('DISPLAY'):
+        print("Warning: DISPLAY not set. To run GUI locally on Raspberry Pi, start in desktop session or use VNC/Remote Desktop.")
 
     app = QApplication(sys.argv)
     window = MainWindow(ros_node)
@@ -139,8 +239,19 @@ def main(args=None):
     try:
         sys.exit(app.exec_())
     finally:
-        ros_node.destroy_node()
-        rclpy.shutdown()
+        # корректно завершаем в зависимости от режима
+        try:
+            if hasattr(ros_node, 'destroy_node'):
+                ros_node.destroy_node()
+        except Exception:
+            pass
+        try:
+            if hasattr(ros_node, 'destroy'):
+                ros_node.destroy()
+        except Exception:
+            pass
+        if rclpy_inited:
+            rclpy.shutdown()
 
 
 if __name__ == '__main__':
