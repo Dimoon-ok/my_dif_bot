@@ -5,6 +5,7 @@ from rclpy.node import Node
 from geometry_msgs.msg import Twist
 from nav_msgs.msg import Odometry
 from geometry_msgs.msg import TransformStamped
+from std_msgs.msg import Float32MultiArray
 
 import tf2_ros
 import serial
@@ -14,12 +15,13 @@ from geometry_msgs.msg import Pose2D
 import glob
 import time
 
+
 class RobotDriverNode(Node):
     def __init__(self):
         super().__init__('robot_driver_node')
 
         # подписка на cmd_vel
-        self.cmd_vel_sub=self.create_subscription(
+        self.cmd_vel_sub = self.create_subscription(
             Twist,
             '/cmd_vel',
             self.cmd_vel_callback,
@@ -27,7 +29,7 @@ class RobotDriverNode(Node):
         )
 
         # публикация в odom
-        self.odom_pub=self.create_publisher(
+        self.odom_pub = self.create_publisher(
             Odometry,
             'odom',
             10
@@ -40,7 +42,22 @@ class RobotDriverNode(Node):
             10
         )
 
-        self.tf_broadcaster=tf2_ros.TransformBroadcaster(self)
+        # Подписка на изменение PID коэффициентов из GUI
+        self.pid_sub = self.create_subscription(
+            Float32MultiArray,
+            '/set_pid',
+            self.pid_callback,
+            10
+        )
+
+        # Публикация отладочных данных (скорости) для графиков
+        self.debug_pub = self.create_publisher(
+            Float32MultiArray,
+            '/robot_debug_info',
+            10
+        )
+
+        self.tf_broadcaster = tf2_ros.TransformBroadcaster(self)
 
         # подключение к serial порту
         self.ser = self.find_robot_serial()
@@ -48,18 +65,22 @@ class RobotDriverNode(Node):
             raise RuntimeError("Не удалось найти контроллер по Serial")
         self.get_logger().info(f"Opened serial port: {self.ser.port}")
 
-        # Регулярка для парсинга строк вида: "POS X=120.00 Y=150.00 Th=0.45"
-        self.pos_pattern=re.compile(r'POS X=([\-\d\.]+) Y=([\-\d\.]+) Th=([\-\d\.]+)')
+        # Обновленная регулярка для парсинга всей строки телеметрии
+        # Формат ESP32: POS X=... Y=... Th=... ENC ... SPD L=... R=... Target L=... R=...
+        self.telemetry_pattern = re.compile(
+            r'POS X=([\-\d\.]+) Y=([\-\d\.]+) Th=([\-\d\.]+).*?'
+            r'SPD L=([\-\d\.]+) mm/s R=([\-\d\.]+) mm/s.*?'
+            r'Target L=([\-\d\.]+) mm/s R=([\-\d\.]+) mm/s'
+        )
 
-        # Периодический таймер для чтения данных из Serial
-        self.timer_period = 0.05  # 20 Гц
-        self.read_serial_timer = self.create_timer(self.timer_period, self.read_serial_timer_callback)
+        self.read_serial_timer = self.create_timer(
+            0.05, self.read_serial_timer_callback)
 
     def find_robot_serial(self):
-        ports=glob.glob("/dev/serial/by-path/*")
+        ports = glob.glob("/dev/serial/by-path/*")
         for port in ports:
             try:
-                ser=serial.Serial(port, 115200, timeout=0.1)
+                ser = serial.Serial(port, 115200, timeout=0.1)
                 ser.write(b"PING\n")
                 time.sleep(0.05)
                 if b"ROBOT_001" in ser.readline():
@@ -69,13 +90,23 @@ class RobotDriverNode(Node):
                 pass
         return None
 
+    def pid_callback(self, msg: Float32MultiArray):
+        # Ожидаем массив [Kp, Ki, Kd, Kff]
+        if len(msg.data) >= 4:
+            kp, ki, kd, kff = msg.data[:4]
+            command = f"SET_COEFF {kp:.4f} {ki:.4f} {kd:.4f} {kff:.4f}\n"
+            try:
+                self.ser.write(command.encode())
+                self.get_logger().info(f"Sent PID update: {command.strip()}")
+            except serial.SerialException as e:
+                self.get_logger().error(f"Failed to write PID to serial: {e}")
+
     def cmd_vel_callback(self, msg: Twist):
         linear_velocity = msg.linear.x * 1000.0  # м/с -> мм/с
         angular_velocity = msg.angular.z         # рад/с
         command = f"SET_ROBOT_VELOCITY {linear_velocity:.2f} {angular_velocity:.2f}\n"
         try:
             self.ser.write(command.encode())
-            self.get_logger().info(f"Sent command: {command.strip()}")
         except serial.SerialException as e:
             self.get_logger().error(f"Failed to write to serial: {e}")
 
@@ -92,18 +123,26 @@ class RobotDriverNode(Node):
     def read_serial_timer_callback(self):
         # Считываем всё, что накопилось в буфере (т.к. timeout=0.1)
         try:
-            # Можем читать построчно, т.к. ESP32 шлёт строки.
             line = self.ser.readline().decode('ascii', errors='ignore').strip()
 
             if not line:
-                return  # нет данных в данный момент
+                return
 
-            # Проверим, похоже ли это на строку одометрии
-            match = self.pos_pattern.search(line)
+            match = self.telemetry_pattern.search(line)
             if match:
                 x_mm = float(match.group(1))  # мм
                 y_mm = float(match.group(2))  # мм
-                th   = float(match.group(3))  # рад
+                th = float(match.group(3))  # рад
+
+                spd_l = float(match.group(4))
+                spd_r = float(match.group(5))
+                tgt_l = float(match.group(6))
+                tgt_r = float(match.group(7))
+
+                # Публикуем отладочные данные: [TargetL, ActualL, TargetR, ActualR]
+                debug_msg = Float32MultiArray()
+                debug_msg.data = [tgt_l, spd_l, tgt_r, spd_r]
+                self.debug_pub.publish(debug_msg)
 
                 # Переводим мм -> м
                 x = x_mm / 1000.0
@@ -120,7 +159,8 @@ class RobotDriverNode(Node):
                 odom_msg.pose.pose.position.z = 0.0
 
                 # Преобразуем угол в кватернион
-                q = euler2quat(0.0, 0.0, th)  # returns (w, x, y, z) - такая у transforms3d специфика
+                # returns (w, x, y, z) - такая у transforms3d специфика
+                q = euler2quat(0.0, 0.0, th)
                 odom_msg.pose.pose.orientation.w = q[0]
                 odom_msg.pose.pose.orientation.x = q[1]
                 odom_msg.pose.pose.orientation.y = q[2]
@@ -144,14 +184,14 @@ class RobotDriverNode(Node):
 
                 self.tf_broadcaster.sendTransform(t)
 
-                # Для наглядности выведем в лог
-                self.get_logger().info(f"ODOM: X={x:.3f} Y={y:.3f} Th={th:.3f}")
+                self.get_logger().info(
+                    f"ODOM: X={x:.3f} Y={y:.3f} Th={th:.3f}")
             else:
-                # Можно выводить предупреждение, но чтобы не заспамить лог, сделаем debug
                 self.get_logger().debug(f"Unknown line: {line}")
 
         except serial.SerialException as e:
             self.get_logger().error(f"Failed to read from serial: {e}")
+
 
 def main(args=None):
     rclpy.init(args=args)
@@ -159,6 +199,7 @@ def main(args=None):
     rclpy.spin(node)
     node.destroy_node()
     rclpy.shutdown()
+
 
 if __name__ == '__main__':
     main()
